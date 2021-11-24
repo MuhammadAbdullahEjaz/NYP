@@ -2,7 +2,7 @@ package com.example.nyp.network.nyt
 
 import com.squareup.moshi.Json
 
-data class Articals(
+data class Articles(
     val id:Long,
     val url:String,
     val title:String,

@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Quantum/AndroidStudioProjects/NYP/app/src/main/res/layout/activity_detail.xml" value="0.25" />
         <entry key="..\:/Users/Quantum/AndroidStudioProjects/NYP/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Quantum/AndroidStudioProjects/NYP/app/src/main/res/layout/artical_feed_view.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/Quantum/AndroidStudioProjects/NYP/app/src/main/res/layout/article_feed_view.xml" value="0.1" />
       </map>
     </option>
   </component>

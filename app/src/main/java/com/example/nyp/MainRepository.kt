@@ -1,9 +1,8 @@
 package com.example.nyp
 
 import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.nyp.network.nyt.Articals
+import com.example.nyp.network.nyt.Articles
 import com.example.nyp.network.nyt.NytApi
 import com.example.nyp.network.nyt.Response
 import com.squareup.moshi.Moshi
@@ -15,7 +14,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 class MainRepository {
     private var nytApiService:NytApi
-    private val data = MutableLiveData<List<Articals>>()
+    private val data = MutableLiveData<List<Articles>>()
     private val moshi = Moshi.Builder()
         .add(KotlinJsonAdapterFactory())
         .build()
@@ -44,7 +43,7 @@ class MainRepository {
             }
         )
     }
-    fun getData():MutableLiveData<List<Articals>>{
+    fun getData():MutableLiveData<List<Articles>>{
         return data
     }
 }
