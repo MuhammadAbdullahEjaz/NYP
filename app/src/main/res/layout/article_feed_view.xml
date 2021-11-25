@@ -4,8 +4,8 @@
 
     <data>
             <variable
-                name="atitle"
-                type="String" />
+                name="article"
+                type="com.example.nyp.network.nyt.Articles" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,12 +19,13 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:setImage="@{article.media}"/>
 
         <TextView
             android:padding="8dp"
             android:id="@+id/title"
-            android:text="@{atitle}"
+            android:text="@{article.title}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@id/thumbnail"
