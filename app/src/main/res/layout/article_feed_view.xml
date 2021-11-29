@@ -5,7 +5,7 @@
     <data>
             <variable
                 name="article"
-                type="com.example.nyp.network.nyt.Articles" />
+                type="com.example.nyp.network.nyt.Article" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

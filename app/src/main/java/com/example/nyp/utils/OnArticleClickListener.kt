@@ -1,7 +1,7 @@
 package com.example.nyp.utils
 
-import com.example.nyp.network.nyt.Articles
+import com.example.nyp.network.nyt.Article
 
 interface OnArticleClickListener {
-    fun onArticleClicked(article:Articles)
+    fun onArticleClicked(article:Article)
 }

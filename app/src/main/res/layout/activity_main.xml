@@ -38,6 +38,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/main_heading" />
 
+        <TextView
+            android:id="@+id/network_status"
+            android:visibility="@{mainViewModel.netWorkStatus}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_network"
+            android:textSize="32sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16dp"
+            android:typeface="sans"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sub_heading"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/articles_feed"
             android:layout_width="match_parent"

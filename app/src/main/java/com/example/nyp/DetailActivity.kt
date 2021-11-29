@@ -2,9 +2,8 @@ package com.example.nyp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.example.nyp.databinding.ActivityDetailBinding
-import com.example.nyp.network.nyt.Articles
+import com.example.nyp.network.nyt.Article
 
 class DetailActivity : AppCompatActivity() {
 
@@ -13,8 +12,9 @@ class DetailActivity : AppCompatActivity() {
 
         val binding = ActivityDetailBinding.inflate(layoutInflater)
         val intent = this.intent
-        binding.article = intent.extras?.get("article") as Articles
+        binding.article = intent.extras?.get("article") as Article
 
         setContentView(binding.root)
+
     }
 }

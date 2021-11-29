@@ -2,4 +2,5 @@
     <string name="app_name">NYP</string>
     <string name="heading">New York Times</string>
     <string name="sub_heading">Popular This Week</string>
+    <string name="no_network">Unable to Connet to Internet</string>
 </resources>

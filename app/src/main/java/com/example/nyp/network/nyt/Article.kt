@@ -3,7 +3,7 @@ package com.example.nyp.network.nyt
 import com.squareup.moshi.Json
 import java.io.Serializable
 
-data class Articles(
+data class Article(
     val id:Long,
     val url:String,
     val title:String,

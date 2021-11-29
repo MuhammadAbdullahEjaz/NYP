@@ -1,20 +1,19 @@
 package com.example.nyp
-import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.nyp.databinding.ArticleFeedViewBinding
-import com.example.nyp.network.nyt.Articles
+import com.example.nyp.network.nyt.Article
 import com.example.nyp.utils.OnArticleClickListener
 
 class ArticlesFeedAdapter(private val onArticleClickListener: OnArticleClickListener):RecyclerView.Adapter<ArticlesFeedAdapter.ViewHolder>(){
 
-    private var data:List<Articles> = emptyList()
+    private var data:List<Article> = emptyList()
 
     class ViewHolder(private val binding: ArticleFeedViewBinding):RecyclerView.ViewHolder(binding.root){
 
-        fun bind(article:Articles, articleClickListner: OnArticleClickListener){
+        fun bind(article:Article, articleClickListner: OnArticleClickListener){
             binding.article = article
             binding.root.setOnClickListener{
                 articleClickListner.onArticleClicked(article)
@@ -37,7 +36,7 @@ class ArticlesFeedAdapter(private val onArticleClickListener: OnArticleClickList
 
     override fun getItemCount(): Int = data.size
 
-    fun updateArticles(articles:List<Articles>?){
+    fun updateArticles(articles:List<Article>?){
         data = articles ?: emptyList()
         notifyDataSetChanged()
     }
